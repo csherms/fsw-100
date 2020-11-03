@@ -1,0 +1,32 @@
+h1 {
+    color: darkgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    float: left;
+    margin: 1cm;
+}
+
+div {
+    margin: 3cm;
+    font-size: larger;
+}
+
+.class1 {
+    font-size: larger;
+}
+
+#ymal {
+    font-size: larger;
+}
