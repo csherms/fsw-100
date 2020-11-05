@@ -1,0 +1,70 @@
+/*HEADER*/
+
+h1 {
+    color: rgb(0, 0, 255);
+    text-align: center;
+}
+
+
+/*TABLE*/
+
+table,
+th,
+tr,
+td {
+    border: 1px black solid;
+    border-width: 2px;
+    border-spacing: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+table {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    height: 30px;
+    background-color: indigo;
+    color: white;
+}
+
+tr:hover {
+    background-color: rgba(75, 0, 130, 0.3);
+}
+
+section {
+    align-items: center;
+}
+
+
+/*NAVBAR*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 20px;
+    background-color: #431bf5;
+    width: 430px;
+    color: white;
+    font-family: cursive;
+    font-size: 23px;
+    font-style: oblique;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    color: rgb(6, 241, 6);
+}
