@@ -1,0 +1,81 @@
+/*main-heading*/
+
+h1 {
+    text-align: center;
+    color: brown;
+}
+
+body {
+    background-color: burlywood;
+}
+
+
+/*navbar*/
+
+.navbar {
+    position: fixed;
+    width: 95%;
+    margin: 30px;
+    background-color: rgb(55, 44, 22, .4);
+    border: 3px solid black;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+a:hover {
+    color: blue
+}
+
+.about {
+    position: relative;
+    left: 1600px;
+}
+
+.menu {
+    position: relative;
+    left: 800px;
+}
+
+.home {
+    padding-left: 30px;
+}
+
+
+/*image-headers*/
+
+h2 {
+    margin: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: brown;
+    padding-top: 200px;
+}
+
+
+/*dates*/
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/*all-images*/
+
+.image1 {
+    float: left;
+    margin: 35px;
+    padding: 10px;
+    border: 10px solid rgb(49, 41, 30);
+}
+
+
+/*main-text*/
+
+.article1 {
+    font-size: 25px;
+}
