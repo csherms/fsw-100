@@ -27,6 +27,14 @@ div {
     font-size: larger;
 }
 
+
+/*used text transform to make uppercase*/
+
 #ymal {
     font-size: larger;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
 }
