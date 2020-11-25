@@ -64,7 +64,8 @@ body {
     background-color: rgb(192, 5, 238);
     font-size: 12px;
     text-transform: uppercase;
-    text-align: center color: white;
+    text-align: center;
+    color: white;
     border: 3px double whitesmoke;
 }
 
