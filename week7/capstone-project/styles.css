@@ -1,4 +1,4 @@
-/* INDEX PAGE STRAT */
+/* General settings and calls */
 
 :root {
     --primary: rgb(49, 49, 49);
@@ -49,6 +49,12 @@ a:hover {
 }
 
 
+/* General settings and calls (end) */
+
+
+/* INDEX PAGE START */
+
+
 /* Nav */
 
 .main-nav ul {
@@ -56,7 +62,7 @@ a:hover {
     gap: 20px;
     padding: 0;
     list-style: none;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .main-nav a {
@@ -81,11 +87,17 @@ a:hover {
 
 /* Top */
 
+
+/* main container */
+
 .top-container {
     display: grid;
     gap: 20px;
     grid-template-areas: 'top-box-a top-container top-container' 'top-box-b top-container top-container';
 }
+
+
+/* main header picture */
 
 .sherman {
     grid-area: top-container;
@@ -114,6 +126,9 @@ a:hover {
     color: white;
 }
 
+
+/* container for audio files and links to soundcloud */
+
 .side-boxes {
     background-color: rgb(44, 2, 44);
     display: flex;
@@ -124,6 +139,9 @@ a:hover {
     padding: 1.5rem;
 }
 
+
+/* individual setting for audio file containers */
+
 .side-box-top {
     grid-area: top-box-a;
 }
@@ -133,14 +151,20 @@ a:hover {
 }
 
 
-/* About Us */
+/* About Us  -  this section contains the circle pictures with links to about page */
+
+
+/* main container */
 
 .boxes {
     display: grid;
     padding: 2rem;
     gap: 80px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+
+/* all circle pics share class of box */
 
 .box {
     margin: 1rem;
@@ -155,11 +179,17 @@ a:hover {
     color: white;
 }
 
+
+/* this changes the shape of the circles into boxes */
+
 .box:hover {
     border: 5px solid white;
     font-weight: bolder;
     border-radius: 10px;
 }
+
+
+/* individual settings for circle images */
 
 .box-one {
     background-image: url(images/me.jpg);
@@ -186,13 +216,19 @@ a:hover {
 }
 
 
-/* Booking  */
+/* Booking   - This section contains the studio time information and the live show information */
+
+
+/* main container */
 
 .booking {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
 }
+
+
+/* studio time picture and table */
 
 .booking-one {
     background-color: black;
@@ -224,6 +260,9 @@ table a:hover {
     color: black;
 }
 
+
+/* live show picture with unordered list */
+
 .booking-two {
     background-image: url(images/mic.jpg);
     background-position: center;
@@ -249,14 +288,27 @@ ul {
 }
 
 
+/* footer arrows  - arrows link to next/previous pages*/
+
+#right-arrow {
+    color: rgb(3, 233, 3);
+    float: right;
+}
+
+#left-arrow {
+    color: rgb(3, 231, 3);
+    float: left;
+}
+
+
 /* Index Page Media Queries */
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 865px) {
     .top-container {
         grid-template-areas: 'top-box-a' 'top-box-b' 'top-container'
     }
     .main-nav ul {
-        grid-template-columns: 1fr;
+        grid-template-columns: none;
     }
     .main-nav a {
         margin: auto;
@@ -278,23 +330,11 @@ ul {
 /* Nav */
 
 .nav-about ul {
-    background-image: url(images/header-three.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 40%;
     display: grid;
     gap: 20px;
-    padding: 6rem;
+    padding: 0;
+    grid-template-columns: repeat(4, 1fr);
     list-style: none;
-    grid-template-columns: repeat(3, 1fr);
-    margin: auto;
-}
-
-.nav-about ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .nav-about a {
@@ -328,22 +368,22 @@ ul {
 }
 
 .images-about img {
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
 }
 
 .images-about p {
     font-size: 25px;
+    text-align: center;
+    line-height: 3rem;
 }
 
 
 /* About Page Media Query */
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:785px) {
     .nav-about ul {
-        background-size: 400px;
-        padding: 20px;
-        background-position-x: right;
+        grid-template-columns: none;
     }
 }
 
@@ -361,7 +401,7 @@ ul {
     gap: 20px;
     padding: 0;
     list-style: none;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .nav-contact a {
@@ -421,10 +461,9 @@ input[type=submit]:hover {
 
 /* Contact Page Media Query */
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 560px) {
     .nav-contact ul {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: none;
     }
 }
 
@@ -432,7 +471,7 @@ input[type=submit]:hover {
 /* CONTACT PAGE END */
 
 
-/* OTHER ARTISTS PAGE */
+/* OTHER ARTISTS PAGE START */
 
 
 /* Nav */
@@ -442,7 +481,7 @@ input[type=submit]:hover {
     gap: 20px;
     padding: 0;
     list-style: none;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .nav-other a {
@@ -465,7 +504,10 @@ input[type=submit]:hover {
 }
 
 
-/* images */
+/* Images */
+
+
+/* main container */
 
 .images-artists {
     display: grid;
@@ -474,6 +516,9 @@ input[type=submit]:hover {
     padding: 1rem;
     background-color: black;
 }
+
+
+/* individual image settings */
 
 .marcus {
     display: grid;
@@ -494,12 +539,14 @@ input[type=submit]:hover {
 
 /* Other Artists Page Media Query */
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 560px) {
     .nav-other ul {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: none;
     }
 }
 
 
 /* OTHER ARTISTS PAGE END */
+
+
+/* that's it... that's all there is, now go to bed, you got s@#t to do in the morning... */
