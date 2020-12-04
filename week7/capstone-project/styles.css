@@ -49,7 +49,7 @@ a:hover {
 }
 
 
-/* Navigation */
+/* Nav */
 
 .main-nav ul {
     display: grid;
@@ -76,7 +76,6 @@ a:hover {
 .main-nav a:hover {
     background-color: rgb(115, 255, 0);
     color: black;
-    font-size: 22px;
 }
 
 
@@ -315,7 +314,6 @@ ul {
 .nav-about a:hover {
     background-color: rgb(115, 255, 0);
     color: black;
-    font-size: 22px;
 }
 
 
@@ -383,7 +381,6 @@ ul {
 .nav-contact a:hover {
     background-color: rgb(115, 255, 0);
     color: black;
-    font-size: 22px;
 }
 
 
@@ -465,7 +462,6 @@ input[type=submit]:hover {
 .nav-other a:hover {
     background-color: rgb(115, 255, 0);
     color: black;
-    font-size: 22px;
 }
 
 
@@ -473,7 +469,7 @@ input[type=submit]:hover {
 
 .images-artists {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     padding: 1rem;
     background-color: black;
@@ -493,6 +489,16 @@ input[type=submit]:hover {
 
 .maw {
     display: grid;
+}
+
+
+/* Other Artists Page Media Query */
+
+@media screen and (max-width: 430px) {
+    .nav-other ul {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
